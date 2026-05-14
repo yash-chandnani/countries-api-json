@@ -1,0 +1,28 @@
+{
+  "name": "countries-api-json",
+  "version": "1.0.4",
+  "description": "A comprehensive package providing detailed information about countries in a structured JSON format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yash-chandnani/countries-api-json"
+  },
+  "keywords": [
+    "countries",
+    "countries-list",
+    "countries-data",
+    "flags",
+    "mobile-codes",
+    "JSON",
+    "ISO-code",
+    "country-json",
+    "country-data",
+    "world-countries",
+    "country-flags"
+  ],
+  "author": "Yash Chadnani",
+  "license": "MIT"
+}
