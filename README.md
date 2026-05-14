@@ -9,15 +9,15 @@ A comprehensive list of countries and their details in JSON format. Useful for a
 
 To install this package, run:
 
-```bash
+\`\`\`bash
 npm install countries-api-json
-```
+\`\`\`
 
 ## Usage
 
 Here is a basic example of how to use this package:
 
-```javascript
+\`\`\`javascript
 const countries = require('countries-api-json');
 
 // Example usage
@@ -25,37 +25,43 @@ console.log(countries); // Prints the entire list of countries
 
 // Accessing specific country details
 const zambia = countries.find(country => country.code === 'ZM');
-console.log(zambia); // { name: 'Zambia', code: 'ZM', dial_code: '+260', flag: '🇿🇲' }
-```
+console.log(zambia);
+// { name: 'Zambia', code: 'ZM', dial_code: '+260', flag: '🇿🇲', flag_url: 'https://flagcdn.com/w40/zm.png' }
+
+// Using flag_url (works on all platforms including Windows)
+console.log(zambia.flag_url); // https://flagcdn.com/w40/zm.png
+\`\`\`
 
 ## API
 
 The package exports a JSON array of country objects. Each country object contains the following properties:
 
-- `name` (String): The name of the country.
-- `code` (String): The ISO 3166-1 alpha-2 code of the country.
-- `dial_code` (String): The international dialing code of the country.
-- `flag` (String): The flag emoji of the country.
+- \`name\` (String): The name of the country.
+- \`code\` (String): The ISO 3166-1 alpha-2 code of the country.
+- \`dial_code\` (String): The international dialing code of the country.
+- \`flag\` (String): The flag emoji of the country.
+- \`flag_url\` (String): The flag image URL of the country (works on all platforms including Windows).
 
 ### Example Country Object
 
-```json
+\`\`\`json
 {
   "name": "Zambia",
   "code": "ZM",
   "dial_code": "+260",
-  "flag": "🇿🇲"
+  "flag": "🇿🇲",
+  "flag_url": "https://flagcdn.com/w40/zm.png"
 }
-```
+\`\`\`
 
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any bugs or features.
 
 1. Fork the repository
-2. Create a new branch (`git checkout -b feature-branch`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin feature-branch`)
+2. Create a new branch (\`git checkout -b feature-branch\`)
+3. Commit your changes (\`git commit -am 'Add some feature'\`)
+4. Push to the branch (\`git push origin feature-branch\`)
 5. Open a pull request
 
 ## License
